@@ -243,11 +243,49 @@ margin-bottom: 30px;
 margin-bottom: 40px;
 }
 
-
-.card>img{
-width: 100%;
-height: auto;
+.imagem-infantil{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/Infant.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
+
+
+.imagem-adulto{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/Padrao.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.imagem-idoso{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(../img/Idosos2.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
 
 
 .container-info{
@@ -306,15 +344,7 @@ object-fit: cover;
     filter: brightness(50%);
     
 }
-.imagem{
-    position: relative;
-    height: 200px;
-}
-.imagem>h1{
-    position: absolute;
-    left: 25%;
-    top: 20%;
-}
+
 .container-action{
 display: flex;
 justify-content: space-around;
