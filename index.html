@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/mediaquery.css">
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="./css/dark.css"/>
     <title>PROJETO TESTE</title>
 </head>
 <body>
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="./img/logob.png" alt="Logo">
+            <img src="./img/logob.png" alt="Logo" id="logo">
         </div>
         <ul class="nav-links">
             <li><a href="index.html" class="btn">Home</a></li>
             <li><a href="pagina1.html" class="btn">Cursos</a></li>
-            <li><a href="#" class="btn">Pagina 2</a></li>
+            <li><a href="#" id="toggleTheme"><img id="themeIcon" src="./img/lua.png" alt=""></a></li>
             <li><a href="#" class="botao">Matricula</a></li>
         </ul>
     </nav>
@@ -169,6 +169,6 @@
         </div>
     </footer>
 </main>
-    
+<script src="./js/theme.js"></script>
 </body>
 </html>

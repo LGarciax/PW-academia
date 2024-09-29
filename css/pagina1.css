@@ -176,7 +176,7 @@
 
 .call-to-curso a{
     text-decoration: none;
-    color: var(--text-nav-color);
+    color: var(--text-button);
 }
 
 .call-to-curso:hover{

@@ -25,35 +25,13 @@
     font-style: normal
     }
 
-    :root {
-
-
-    --text-color: #ffffff;
-    --background-color: #222;
-
-    --accent-bg-color: #7f1d1d;
-    --dark-accent-bg-color: #450A0A;
-    
-    --text-button: #ffffff;
-    --button-color: #7f1d1d;
-
-    --nav-background: #333;
-    --text-nav-color: #fff;
-    --nav-accent: #FFF;
-
-    --card-text: #ffffff;
-
-
-
-
-
-    }
-
 body{
+
 background-color: var(--background-color);
 color: var(--text-color);
 }
 /* Nav-Bar */
+
 
 .navbar {
 height: 80px;
