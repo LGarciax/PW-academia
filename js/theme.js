@@ -45,5 +45,3 @@ function loadTheme() {
         logo.setAttribute("src","./img/logov.png");
     }
 }
-
-window.addEventListener("DOMContentLoaded", loadTheme);
