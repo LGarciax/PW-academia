@@ -1,7 +1,7 @@
 :root{
 
     --text-color: #000000;
-    --background-color: #ffffff;
+    --background-color: #f7f7f7;
 
     --accent-bg-color: #7f1d1d;
     --dark-accent-bg-color: #450A0A;
@@ -9,7 +9,7 @@
     --text-button: #ffffff;
     --button-color: #7f1d1d;
 
-    --nav-background: #ffffff;
+    --nav-background: #f7f7f7;
     --text-nav-color: #000000;
     --nav-accent: #7f1d1d;
 

@@ -186,3 +186,155 @@
 .hidden{
     display:none;
 }
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 100ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 10% auto;
+    border-radius: 10px;
+    width: 60vw;
+    height: 70%;
+    position: relative;
+    box-shadow: #000000 0px 0px 100px;
+    display: flex;
+    color:#fff;
+    
+    
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  .popup .close:hover {
+    color: var(--button-color);
+  }
+  .popup .content {
+    width: 50vw;
+    backdrop-filter: blur(30px);
+    border-radius: 10px
+   
+  }
+  .popup .content2 {
+    width: 50vw;
+    height: 100%;
+    background-color: var(--dark-accent-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+   .content2 ul{
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: var(--dark-accent-bg-color);
+    filter: brightness(110%);
+    width: fit-content;
+    padding: 50px;
+    
+                 
+    
+    
+  }
+
+  .content2 ul li{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .content2 img{
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  form{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .enviar{
+
+    width: fit-content;
+    align-self: center;
+    background: var(--dark-accent-bg-color);
+    border-radius: 999px;
+    box-shadow: #141414 5px 5px 5px 2px;
+    box-sizing: border-box;  
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 30px 60px;  
+    margin-bottom: 5%;
+    
+
+
+}
+
+.enviar a{
+    text-decoration: none;
+    color: var(--text-button)
+}
+
+#Contato{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+  }
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+  }

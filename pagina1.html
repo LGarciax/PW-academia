@@ -101,13 +101,53 @@
 
 
 </section>
-
+<span class="hidden" id="popupclose"></span>
 <section class="call">
     <div class="container-call">
 
         <h3> Se ainda tem dúvidas sobre o nosso curso de Muay Thai ou quer saber mais sobre como podemos ajudar você a alcançar seus objetivos, entre em contato com a nossa equipe! Estamos prontos para responder suas perguntas e ajudá-lo a tomar a melhor decisão.</h3>
         <div class="call-to-curso">
-            <a href="#"">Fale conosco</a>
+            <a href="#popup1">Fale conosco</a>
+        </div>
+    </div>
+    <div id="popup1" class="overlay">
+        
+        <div class="popup">
+            <a class="close" href="#popupclose">&times;</a>
+            <div class="content">
+                <form id="Contato" action="/submit" method="post">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="nome" name="name" placeholder="Nome" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="email@email.com"  required><br><br>
+                    
+                    <label for="tel">Telefone:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="(11) XXXXX-XXXX"  required><br><br>
+                    
+                    <label for="motive">Razão de contato:</label><br>
+                    <textarea id="motive" name="motive" rows="4" cols="50" placeholder="Deixe o motivo do contato para que possamos retornar o mais rapido possive."  required></textarea><br><br>
+                    
+                    <div class="enviar">
+                        <a href="#">Enviar</a>
+                    </div>
+                  </form>
+            </div>
+            <div class="content2">
+                <div class="contato">
+                
+                <ul>
+                    <h3>Contato</h3>
+                    <li><img src="./img/casa.png" alt="">Rua Muay Thai, XX, São Paulo</li>
+                    <li><img src="./img/enviar.png" alt="">info@ascensaodotigre.com</li>
+                    <li><img src="./img/telefone.png" alt="">+55 11 5555-5555</li>
+              
+                    
+                    
+                </ul>
+                </div>
+                
+            </div>
         </div>
     </div>
 
@@ -143,6 +183,7 @@
                 <li>+55 11 5555-5555</li>
                 
             </ul>
+            
         </div>    
     </div>
     <div class="footer-links">
