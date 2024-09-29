@@ -182,3 +182,7 @@
 .call-to-curso:hover{
     filter:brightness(70%);
 }
+
+.hidden{
+    display:none;
+}

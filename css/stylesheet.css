@@ -152,6 +152,7 @@ align-items: center;
 }
 
 /* Cards */ 
+
 .container-cards{
 margin-top: 10%;
 display: flex;
@@ -171,6 +172,9 @@ width: 25%;
 cursor: pointer;
 transition: 0.5s ease;
 animation: pulse 3s infinite alternate;
+}
+.card a{
+    text-decoration: none;
 }
 .card:hover{
     transform: scale(1.1);
