@@ -28,22 +28,24 @@
     :root {
 
 
-    --text-color: black;
+    --text-color: #ffffff;
     --background-color: #222;
+
+    --accent-bg-color: #7f1d1d;
+    --dark-accent-bg-color: #450A0A;
+    
     --text-button: #ffffff;
-
-
-    --nav-button-color: #7f1d1d;
+    --button-color: #7f1d1d;
 
     --nav-background: #333;
     --text-nav-color: #fff;
+    --nav-accent: #FFF;
 
-    --card-background: var(--info-background);
-    --card-text: #fff;
+    --card-text: #ffffff;
 
-    --social-background: #450A0A;
 
-    --info-background: #7f1d1d;
+
+
 
     }
 
@@ -102,7 +104,7 @@ font-size: 1.5em;
 }
 .btn::after{
 content:" ";
-background-color: #fff;
+background-color: var(--nav-accent);
 position: absolute;
 width: 0;
 height: 4px;
@@ -123,7 +125,7 @@ color: var(--text-button);
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: var(--nav-button-color);
+background-color: var(--button-color);
 width: 150px;
 border-radius: 30px;
 
@@ -288,7 +290,7 @@ min-height: fit-content;
 margin: 10% auto 0 auto ;
 
 flex-wrap: nowrap;
-background-image: linear-gradient(-70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/academia.jpg');
+background-image: linear-gradient(-70deg, var(--accent-bg-color) 35%, rgba(0, 0, 0, 0) 50%), url('../img/academia.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 
@@ -296,7 +298,7 @@ background-repeat: no-repeat;
 }
 
 .info-text{
-color: var(--text-button);
+color: var(--card-text);
 width:45%;
 margin: 30px;
 word-wrap: break-word;
@@ -368,14 +370,14 @@ margin-top: 5%;
 .container-action h3{
 text-align: center;
 font-size: 40px;
-color: var(--card-text);
+color: var(--text-color);
 width: 60%;
 }
 
 .call-to-action{
-background: var(--nav-button-color);
+background: var(--button-color);
 border-radius: 999px;
-box-shadow: var(--nav-button-color) 0 15px 25px -8px;
+box-shadow: var(--button-color) 0 15px 25px -8px;
 box-sizing: border-box;  
 cursor: pointer;
 font-size: 2em;
@@ -400,8 +402,8 @@ filter: brightness(80%);
 }
 
 .social{
-background-color: var(--social-background);
-color: var(--text-button);
+background-color: var(--dark-accent-bg-color);
+color: var(--card-text);
 
 
 }
@@ -439,8 +441,8 @@ margin-right: 15px;
 }
 
 footer {
-background-color: var(--nav-background);
-color: var(--text-button);
+
+color: var(--card-text);
 
 
 }
@@ -452,7 +454,7 @@ height: 30dvh;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: var(--card-background);
+background-color: var(--accent-bg-color);
 overflow: hidden;
 flex-wrap: wrap;
 
@@ -506,7 +508,7 @@ margin-bottom: 10px;
 
 
 .table {
-background-color: var(--info-background);
+background-color: var(--accent-bg-color);
 text-align: left;
 border-collapse: collapse;
 margin: auto;
@@ -526,7 +528,7 @@ font-size: 16px;
 
 }
 .table tr:nth-child(even) {
-background:var(--info-background);
+background:var(--accent-bg-color);
 }
 .tablet{
     display: flex;
