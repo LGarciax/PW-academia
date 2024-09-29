@@ -30,7 +30,7 @@
 
     --text-color: black;
     --background-color: #222;
-    --text-button: #fef2f2;
+    --text-button: #ffffff;
 
 
     --nav-button-color: #7f1d1d;
@@ -51,6 +51,7 @@ body{
 background-color: var(--background-color);
 color: var(--text-color);
 }
+/* Nav-Bar */
 
 .navbar {
 height: 80px;
@@ -101,7 +102,7 @@ font-size: 1.5em;
 }
 .btn::after{
 content:" ";
-background-color: var(--nav-button-color);
+background-color: #fff;
 position: absolute;
 width: 0;
 height: 4px;
@@ -126,18 +127,14 @@ background-color: var(--nav-button-color);
 width: 150px;
 border-radius: 30px;
 
-
 }
 
 .botao:hover {
 filter: brightness(80%);
 }
-section{
-    margin-top: 10%;
-}
-#sessao1{
-margin-top: 50px;
-}
+
+/* Banner */
+
 .sessao1>h1{
 color: var(--text-button);
 }
@@ -152,8 +149,9 @@ align-items: center;
 
 }
 
+/* Cards */ 
 .container-cards{
-
+margin-top: 10%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
@@ -191,20 +189,9 @@ font-size: 40pt;
 margin-top: 20px;
 position: relative;
 display: inline-block;
+text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
 
 
-}
-
-.card h3{
-font-family: "Dancing", serif;
-font-weight: 100;
-font-style: normal;
-font-size: 12pt;
-letter-spacing: 1px;
-color: var(--card-text);
-margin-top: 30px;
-margin-bottom: 15px;
-/* text-decoration: underline; */
 }
 
 .card ul{
@@ -289,78 +276,97 @@ border-radius: 15px;
     
 }
 
-
+/* Info - Academia */
 
 .container-info{
 display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
-height: 30vw;
-margin: auto;
-background-color: var(--card-background);
-overflow: hidden;
+height: 70dvh;
+min-height: fit-content;
+margin: 10% auto 0 auto ;
+
+flex-wrap: nowrap;
+background-image: linear-gradient(-70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/academia.jpg');
+
+background-repeat: no-repeat;
+background-size: cover;
+
 }
 
 .info-text{
 color: var(--text-button);
-width:50%;
+width:45%;
 margin: 30px;
 word-wrap: break-word;
+backdrop-filter: brightness(98%);
 
 }
 
 .info-text h2{
 margin-bottom: 20px;
 font-weight: 450;
-font-size: 3em;
 font-family: 'Showdex', sans-serif;
 color: var(--card-text);
 font-weight:200;
-font-size: 40pt;
+font-size: calc(34px + 6 * ((100vw - 320px) / 680));
 text-transform: uppercase;
+text-align: center;
+
+
+}
+
+.h2-destaque{
+margin-bottom: 20px;
+font-weight: 450;
+font-family: 'Showdex', sans-serif;
+color: var(--card-text);
+font-weight:200;
+font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+text-transform: uppercase;
+text-align: center;
+text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
+
+
 }
 
 .info-text p{
-font-size: 1.5em;
-text-align: justify;
-hyphens: auto;
+font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+text-align: right;
+
+
+
 }
 
 .info-img{
 width: 50%;
-height: 100%;
+height: 80%;
+/*
+background-image: url(../img/academia.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+*/
 
 }
 
-.info-img img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-
-}
-
-.imagem>img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-    
-}
-
+/* Call to Action */
 .container-action{
 display: flex;
 justify-content: space-around;
 align-items: center;
 flex-direction: column;
-margin: 20px;
+height: 15vh;
+margin-top: 5%;
+margin-bottom: 5%;
 }
 
 .container-action h3{
 text-align: center;
-margin-bottom: 30px;
-font-size: 30px;
+font-size: 40px;
 color: var(--card-text);
+width: 60%;
 }
 
 .call-to-action{
@@ -374,7 +380,7 @@ font-weight: 400;
 line-height: 24px;
 opacity: 1;
 outline: 0 solid transparent;
-padding: 20px;  
+padding: 30px;  
 margin-bottom: 10%;
 margin-top: 2%;
 }
@@ -395,17 +401,16 @@ background-color: var(--social-background);
 color: var(--text-button);
 margin-top: 50px;
 
-
-
 }
 
 .social-media{
 display: flex;
 justify-content: space-between;
 align-items: center;   
-flex-wrap: nowrap;
+flex-wrap: wrap;
 overflow: hidden;
-height: 50px;
+height: fit-content;
+padding: 10px;
 
 }
 
@@ -419,6 +424,12 @@ object-fit: contain;
 margin-right: 10px;
 }
 
+.social-img img:hover{
+    filter:brightness(90%);
+    box-shadow: 2px 3px black;
+    border-radius: 999px;
+    transform: scale(1.1em);
+}
 
 .social-img:last-child{
 margin-right: 15px;
@@ -440,13 +451,31 @@ justify-content: space-between;
 align-items: center;
 background-color: var(--card-background);
 overflow: hidden;
+flex-wrap: wrap;
 
 }
+
+.footer-text{
+    width: 50%;
+    
+}
+
+.footer-text h3{
+    font-size: 20pt;
+    text-align: center;
+}
+
+.footer-text p{
+    font-size: 15pt;
+    margin-left: 30px;
+    text-align: justify;
+}
+
 
 .footer-links {
 margin-top: 10px;
 text-align: center;
-width: 33%;
+width: 25%;
 
 }
 
