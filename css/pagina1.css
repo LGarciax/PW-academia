@@ -4,76 +4,181 @@
     
 }
 
-.container-curso{
+.container-curso1{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 20vw;
-    margin: 10px auto;
-    overflow: hidden;
-   color: white;
-   background: linear-gradient(to right, var(--info-background), transparent 75%);
-}
+    height: 70dvh;
+    min-height: fit-content;
+    margin: 20px auto 0 auto ;
+    
+    flex-wrap: nowrap;
+    background-image: linear-gradient(70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/Infant.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    }
 
 .container-curso2{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 20vw;
+    height: 70dvh;
+    min-height: fit-content;
+    margin-top: 30px;
     
-    overflow: hidden;
-   color: white;
-   background: linear-gradient(to left, var(--info-background), transparent 75%);
-}
+    flex-wrap: nowrap;
+    background-image: linear-gradient(-70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/adulto.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
 
-
-.curso-text{
-    width:50%;
-    height: 100%;
+.container-curso3{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;  
-}
-
-
-.curso-text h2 {
-    font-size: 50px;
+    justify-content: center;
+    width: 100%;
+    height: 70dvh;
+    min-height: fit-content;
+    margin-top: 30px;
     
+    flex-wrap: nowrap;
+    background-image: linear-gradient(70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/idoso.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    
+    .curso-text{
+    color: var(--text-button);
+    width:45%;
+    margin: 30px;
+    word-wrap: break-word;
+    backdrop-filter: brightness(98%);
+    display:flex;
+    flex-direction: column;
+    
+    }
+    
+    .curso-text h2{
+    margin-bottom: 20px;
+    font-weight: 450;
+    font-family: 'Showdex', sans-serif;
+    color: var(--card-text);
+    font-weight:200;
+    font-size: calc(34px + 6 * ((100vw - 320px) / 680));
+    text-transform: uppercase;
+    text-align: center;
+    
+    
+    }
+    
+    .h2-destaque{
+    margin-bottom: 20px;
+    font-weight: 450;
+    font-family: 'Showdex', sans-serif;
+    color: var(--card-text);
+    font-weight:200;
+    font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
+    
+    
+    }
+    .curso-text2{
+        color: var(--text-button);
+        width:45%;
+        margin: 30px;
+        word-wrap: break-word;
+        backdrop-filter: brightness(95%);
+        display:flex;
+        flex-direction: column;
+        }
+        
+.curso-text2 h2{
+    margin-bottom: 20px;
+    font-weight: 450;
+    font-family: 'Showdex', sans-serif;
+    color: var(--card-text);
+    font-weight:200;
+    font-size: calc(34px + 6 * ((100vw - 320px) / 680));
+    text-transform: uppercase;
+    text-align: center;
 }
+
+    .curso-text2 p{
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    text-align: right;
+    
+    }
 
 .curso-text p{
-    font-size: 30px;
-    width: 90%;
+    font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    text-align: left;
 }
+ 
+
+
 
 .curso-img{
     width:50%;
     height: 100%;
     
 }
-
-.curso-img img{
-    width: 100%;
+.container-call{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
     height: 100%;
-    object-fit: contain;
+    margin-top: 5%;
     
+    }
+    
+    .container-call h3{
+    text-align: center;
+    font-size: 25px;
+    color: var(--card-text);
+    width: 60%;
+    }
+    
+
+.call-to-curso{
+
+    width: fit-content;
+    align-self: center;
+    background: var(--nav-button-color);
+    border-radius: 999px;
+    box-shadow: var(--social-background) 15px 18px 25px 10px;
+    box-sizing: border-box;  
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 30px;  
+    margin-bottom: 5%;
+    margin-top: 60px;
+    filter: brightness(100%);
+     ;
+
 }
 
-.curso-botao{
 
-    background-color: var(--nav-button-color);
-    margin-top: 20px;
-    padding: 30px;
-    border-radius: 5px;
-    font-size: 30px;
-    
 
-}
-
-.curso-botao a{
+.call-to-curso a{
     text-decoration: none;
     color: var(--text-nav-color);
 }
 
-.curso-botao:hover{
-    filter:brightness(80%);
+.call-to-curso:hover{
+    filter:brightness(70%);
 }

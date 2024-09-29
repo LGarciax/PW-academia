@@ -226,7 +226,7 @@ border-radius: 15px;
 
 .imagem-infantil{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../img/Infant.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/Infant2.jpg);
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -245,7 +245,7 @@ border-radius: 15px;
 
 .imagem-adulto{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../img/Padrao.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/adulto2.jpg);
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -261,7 +261,7 @@ border-radius: 15px;
 
 .imagem-idoso{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../img/Idosos2.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/Idoso2.jpg);
     height: 250px;
     background-position: center;
     background-size: cover;
@@ -289,9 +289,9 @@ margin: 10% auto 0 auto ;
 
 flex-wrap: nowrap;
 background-image: linear-gradient(-70deg, var(--info-background) 35%, rgba(0, 0, 0, 0) 50%), url('../img/academia.jpg');
-
-background-repeat: no-repeat;
 background-size: cover;
+background-repeat: no-repeat;
+
 
 }
 
@@ -352,14 +352,17 @@ background-size: cover;
 }
 
 /* Call to Action */
+
+
+
 .container-action{
 display: flex;
-justify-content: space-around;
+
 align-items: center;
 flex-direction: column;
-height: 15vh;
+height: 100%;
 margin-top: 5%;
-margin-bottom: 5%;
+
 }
 
 .container-action h3{
@@ -381,7 +384,7 @@ line-height: 24px;
 opacity: 1;
 outline: 0 solid transparent;
 padding: 30px;  
-margin-bottom: 10%;
+margin-bottom: 5%;
 margin-top: 2%;
 }
 
@@ -399,7 +402,7 @@ filter: brightness(80%);
 .social{
 background-color: var(--social-background);
 color: var(--text-button);
-margin-top: 50px;
+
 
 }
 
@@ -410,7 +413,7 @@ align-items: center;
 flex-wrap: wrap;
 overflow: hidden;
 height: fit-content;
-padding: 10px;
+padding: 20px;
 
 }
 
