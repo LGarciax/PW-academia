@@ -34,7 +34,8 @@ color: var(--text-color);
 
 
 .navbar {
-height: 80px;
+height: 10dvh;
+max-height: 80px;
 display: flex;
 justify-content: space-between;
 align-items: center; 
@@ -47,13 +48,15 @@ z-index: 1000;
 }
 
 .logo {
-height: auto;   
+  
 margin-left: 20px;
+
 }
 
 .logo img{
-margin-left: 40%;
-height: 60px;
+margin-left: 35px;
+height: 10dvh;
+max-height: 60px;
 }
 
 
@@ -61,6 +64,9 @@ height: 60px;
 list-style: none;
 display: flex;
 gap: 20px;
+width: 30dwh;
+max-width: 700px;
+margin-right: 20px;
 
 }
 
@@ -104,7 +110,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: var(--button-color);
-width: 150px;
+width: 10dvh;
+padding: 15px;
+min-width: fit-content;
 border-radius: 30px;
 
 }
@@ -122,7 +130,8 @@ color: var(--text-button);
 background-image: url(../img/Banner.png);
 background-position: center;
 background-size: cover;
-height: 80vh;
+background-repeat: no-repeat;
+height: 80dvh;
 display: flex;   
 justify-content: center;
 align-items: center;
