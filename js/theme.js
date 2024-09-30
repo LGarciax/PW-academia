@@ -6,14 +6,14 @@ function switchTheme(){
     
     if (stylesheet.getAttribute("href") === "./css/light.css") {
         stylesheet.setAttribute("href", "./css/dark.css");
-        themeIcon.setAttribute("src", "./img/lua.png");
+        themeIcon.setAttribute("src", "./img/sol.png");
         logo.setAttribute("src", "./img/logob.png");
         localStorage.setItem("theme", "dark");
         console.log("Theme set to dark");
         
     } else {
         stylesheet.setAttribute("href", "./css/light.css");
-        themeIcon.setAttribute("src", "./img/sol.png");
+        themeIcon.setAttribute("src", "./img/lua.png");
         logo.setAttribute("src", "./img/logov.png");
         localStorage.setItem("theme", "light");
         console.log("Theme set to light");
@@ -37,11 +37,11 @@ function loadTheme() {
     
     if (savedTheme === "dark") {
         stylesheet.setAttribute("href","./css/dark.css");
-        themeIcon.setAttribute("src","./img/lua.png");
+        themeIcon.setAttribute("src","./img/sol.png");
         logo.setAttribute("src","./img/logob.png");
     } else {
         stylesheet.setAttribute("href","./css/light.css");
-        themeIcon.setAttribute("src","./img/sol.png");
+        themeIcon.setAttribute("src","./img/lua.png");
         logo.setAttribute("src","./img/logov.png");
     }
 }
