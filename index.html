@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/mediaquery.css">
-    <title>PROJETO TESTE</title>
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="./css/dark.css"/>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    
+    <title>Ascensão do Tigre</title>
 </head>
 <body>
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="./img/logob.png" alt="Logo">
+            <img src="./img/logob.png" alt="Logo" id="logo">
         </div>
         <ul class="nav-links">
-            <li><a href="#" class="btn">Home</a></li>
-            <li><a href="./pagina1.html" class="btn">Pagina 1</a></li>
-            <li><a href="#" class="btn">Pagina 2</a></li>
-            <li><a href="#" class="botao">Botão</a></li>
+            <li><a href="index.html" class="btn">Home</a></li>
+            <li><a href="pagina1.html" class="btn">Cursos</a></li>
+            <li><a href="#" id="toggleTheme"><img id="themeIcon" src="./img/sol.png" alt=""></a></li>
+            <li><a href="#" class="botao">Matricula</a></li>
         </ul>
     </nav>
 </header>
@@ -30,90 +32,56 @@
     </section>
     <section >
         <div class="container-cards">
-            <div class="card">
-                <div class="imagem-infantil">
-                    <h1>INFANTIL</h1>
-                </div>        
-               
-                <div class="conteudo">
-                    <div class="content-card">
-                        <h3>Desenvolvimento fisico e mental</h3>
-                        <ul>
-                            <li>Aulas adaptadas para crianças</li>
-                            <li>Melhora na coordenação motora e equilíbrio</li>
-                            <li>Fortalecimento físico de maneira segura e supervisionada</li>                        
-                        </ul>
-                        <!-- <h3>Disciplina e Respeito</h3>
-                        <ul>
-                            <li>Ensinamentos sobre respeito aos colegas e professores</li>
-                            <li>Foco na disciplina como ferramenta de crescimento pessoal</li>
-                            <li>Desenvolvimento de autocontrole e concentração</li>                        
-                        </ul>
-                        <h3>Diversão e Aprendizado</h3>
-                        <ul>
-                            <li>Atividades lúdicas para manter o interesse</li>
-                            <li>Técnicas de defesa pessoal de maneira simples e prática</li>
-                            <li>Ambiente amigável e acolhedor para todas as crianças</li>                        
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagem-adulto">
-                    <h1>ADULTO</h1>
-                </div>
-                <div class="conteudo">
-                    <h3>Treinamento fisico intenso</h3>
-                    <div class="content-card" >
-                        <ul>
-                            <li>Melhoria da força, resistência e flexibilidade</li>
-                            <li>Aulas dinâmicas que combinam técnica e exercícios funcionais</li>
-                            <li>Foco na queima calórica e desenvolvimento muscular</li>                        
-                        </ul>
-                        <!-- <h3>Técnicas de Muay Thai</h3>
-                        <ul>
-                            <li>Treinamento completo de golpes e defesas</li>
-                            <li>Aperfeiçoamento das técnicas tradicionais do Muay Thai</li>
-                            <li>Desenvolvimento de agilidade e reação rápida</li>                        
-                        </ul>
-                        <h3>Equilíbrio mental</h3>
-                        <ul>
-                            <li>Alívio do estresse e melhora do foco</li>
-                            <li>Aumento da autoconfiança e controle emocional</li>
-                            <li>Prática de respeito, disciplina e espírito de equipe</li>                        
-                        </ul> -->
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imagem-idoso">
-                    <h1>Idoso</h1>
-                </div>
-                <div class="imagem">
+            
+<div class="card">
+    <a href="./pagina1.html#Infantil">
+    <div class="imagem-infantil">
+        <div class="card-text-effect">
+        <h1>INFANTIL</h1>
+                <ul>
+                <li>Aulas adaptadas para crianças</li>
+                <li>Desenvolvimento fisico e mental</li>           
+                <li>Melhora na coordenação motora e equilíbrio</li>
+                <li>Fortalecimento físico de maneira segura e supervisionada</li>                        
+            </ul>
+    </div> 
+    </a>
+        
+</div>
 
+</div>          
+            <div class="card">
+                <a href="./pagina1.html#Adulto">
+                <div class="imagem-adulto">
+                    <div class="card-text-effect">
+                    <h1>ADULTO</h1>
+                    <ul>
+                        <li>Treinamento fisico intenso</li>
+                        <li>Melhoria da força, resistência e flexibilidade</li>
+                        <li>Aulas dinâmicas que combinam técnica e exercícios funcionais</li>
+                        <li>Foco na queima calórica e desenvolvimento muscular</li>                        
+                    </ul>
+                    
+                    </div>
+                
                 </div>
-                <div class="conteudo">
-                    <div class="content-card">
-                        <h3>Atividade fisica segura</h3>
+            </a>
+            </div>
+            <div class="card">
+                <a href="./pagina1.html#Idoso">
+                <div class="imagem-idoso">
+                    <div class="card-text-effect">
+                    <h1>Idoso</h1>
                         <ul>
+                            <li>Atividade fisica segura</li>
                             <li>Aulas adaptadas para garantir segurança e conforto</li>
                             <li>Exercícios que melhoram a mobilidade e flexibilidade</li>
                             <li>Treinamento de baixo impacto para fortalecer o corpo</li>                        
                         </ul>
-                        <!-- <h3>Saúde e bem-estar</h3>
-                        <ul>
-                            <li>Melhora da circulação e saúde cardiovascular</li>
-                            <li>Fortalecimento de músculos e articulações</li>
-                            <li>Manutenção de uma vida ativa e saudável</li>                        
-                        </ul>
-                        <h3>Socialização e Qualidade de Vida</h3>
-                        <ul>
-                            <li>Ambiente acolhedor e motivador</li>
-                            <li>Incentivo à convivência e novas amizades</li>
-                            <li>Estímulo à confiança e independência</li>                        
-                        </ul> -->
+ 
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </section>
@@ -122,13 +90,16 @@
     <section class="Info">
 
         <div class="container-info">
-            <div class="info-text">
-                <h2>Por que escolher a Ascensão do Tigre?</h2>
-                <p>Na Ascensão do Tigre, acreditamos que o Muay Thai é muito mais do que uma arte marcial — é um estilo de vida que pode transformar sua saúde física e mental. Com aulas adaptadas para todas as idades e níveis, oferecemos uma experiência completa que vai além do treino.</p>
-            </div>
             <div class="info-img">
-                <img src="./img/academia.jpg" alt="">
+               
             </div>
+            <div class="info-text">
+                
+                <h2>Por que escolher a <br><span class="h2-destaque">Ascensão do Tigre?</span></h2>
+                <p>Na Ascensão do Tigre, acreditamos que o Muay Thai é muito mais do que uma arte marcial — é um estilo de vida que pode transformar sua saúde física e mental. Com aulas adaptadas para todas as idades e níveis, oferecemos uma experiência completa que vai além do treino.</p>
+               
+            </div>
+
 
         </div>
 
@@ -161,7 +132,7 @@
 
     <footer>
         <div class="footer">
-        <div class="footer-links">
+        <div class="footer-text">
             <h3>Sobre a Ascensão do Tigre</h3>
             <p>Na Ascensão do Tigre, acreditamos que o Muay Thai é mais do que uma arte marcial — é um caminho para o crescimento pessoal, disciplina e bem-estar. Nosso objetivo é criar um espaço onde alunos de todas as idades e níveis possam se desafiar, superar limites e descobrir o seu verdadeiro potencial.</p>
         </div>
@@ -200,6 +171,6 @@
         </div>
     </footer>
 </main>
-    
+<script src="./js/theme.js"></script>
 </body>
 </html>
