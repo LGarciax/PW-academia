@@ -20,18 +20,11 @@ function switchTheme(){
     }
 }
 
-
-
-document.getElementById("toggleTheme").addEventListener("click", function(e) {
-    e.preventDefault(); 
-    switchTheme();
-
-});
-
 function loadTheme() {
     var savedTheme = localStorage.getItem("theme"); // Get the saved theme from localStorage
     var stylesheet = document.getElementById("stylesheet");
     var themeIcon = document.getElementById("themeIcon");
+    var logo = document.getElementById("logo");
 
     console.log("Loaded theme from localStorage:", savedTheme);
     
@@ -45,3 +38,5 @@ function loadTheme() {
         logo.setAttribute("src","./img/logov.png");
     }
 }
+
+window.onload = loadTheme;
