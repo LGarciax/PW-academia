@@ -20,8 +20,13 @@ function switchTheme(){
     }
 }
 
+document.getElementById("toggleTheme").addEventListener("click", function(e) {
+    e.preventDefault(); 
+    switchTheme(); 
+});
+
 function loadTheme() {
-    var savedTheme = localStorage.getItem("theme"); // Get the saved theme from localStorage
+    var savedTheme = localStorage.getItem("theme"); 
     var stylesheet = document.getElementById("stylesheet");
     var themeIcon = document.getElementById("themeIcon");
     var logo = document.getElementById("logo");
