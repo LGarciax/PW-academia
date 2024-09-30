@@ -1,6 +1,6 @@
 
 .cursos{
-    margin-top: 20px;
+    margin-top: 4%;
     
 }
 
@@ -71,10 +71,10 @@
     font-weight: 450;
     font-family: 'Showdex', sans-serif;
     color: var(--card-text);
-    font-weight:200;
-    font-size: calc(34px + 6 * ((100vw - 320px) / 680));
+    font-weight:200;    
     text-transform: uppercase;
     text-align: center;
+    
     
     
     }
@@ -85,7 +85,7 @@
     font-family: 'Showdex', sans-serif;
     color: var(--card-text);
     font-weight:200;
-    font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(50px + 6 * ((100vw - 320px) / 680));
     text-transform: uppercase;
     text-align: center;
     text-shadow: .1em .1em 0 hsl(0, 0%, 0%);
@@ -97,7 +97,7 @@
         width:45%;
         margin: 30px;
         word-wrap: break-word;
-        backdrop-filter: brightness(95%);
+        backdrop-filter: brightness(98%);
         display:flex;
         flex-direction: column;
         }
@@ -108,7 +108,6 @@
     font-family: 'Showdex', sans-serif;
     color: var(--card-text);
     font-weight:200;
-    font-size: calc(34px + 6 * ((100vw - 320px) / 680));
     text-transform: uppercase;
     text-align: center;
 }
