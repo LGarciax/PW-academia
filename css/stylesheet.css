@@ -34,7 +34,7 @@ color: var(--text-color);
 
 
 .navbar {
-height: 10dvh;
+height: 10vh;
 max-height: 80px;
 display: flex;
 justify-content: space-between;
@@ -47,10 +47,8 @@ top: 0;
 z-index: 1000;
 }
 
-.logo {
-  
+.logo { 
 margin-left: 20px;
-
 }
 
 .logo img{
@@ -66,7 +64,7 @@ display: flex;
 gap: 20px;
 width: 30dwh;
 max-width: 700px;
-margin-right: 20px;
+margin-right: 20px;  
 
 }
 
@@ -127,15 +125,49 @@ filter: brightness(80%);
 color: var(--text-button);
 }
 .banner {
-background-image: url(../img/Banner.png);
+
 background-position: center;
 background-size: cover;
-background-repeat: no-repeat;
-height: 80dvh;
-display: flex;   
+height: 60%;   
 justify-content: center;
 align-items: center;
+display: inline-block;
+position: relative;
+}
 
+.banner-image{
+width: 100%;
+height: auto;
+}
+
+.price{
+position: absolute;
+font-size: 2.5vw;
+color: white;
+padding: 5px;
+border-radius: 5px;
+font-family: 'Showdex', sans-serif;
+}
+
+.price p {
+    font-family: 'Showdex', sans-serif;
+}
+
+#infantil{
+font-family: 'Showdex', sans-serif;
+color: var(--card-text);
+top: 32vw;
+left: 4.5vw;
+}
+
+#adulto{
+top: 32vw;
+left: 26.5vw;
+}
+
+#idoso{
+top: 32vw;
+left: 48vw;
 }
 
 /* Cards */ 
