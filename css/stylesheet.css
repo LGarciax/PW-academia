@@ -286,7 +286,7 @@ border-radius: 15px;
 
 .imagem-idoso{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../img/Idoso2.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/idoso2.webp);
     height: 250px;
     background-position: center;
     background-size: cover;
