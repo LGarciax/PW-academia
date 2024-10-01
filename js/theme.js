@@ -33,7 +33,7 @@ function loadTheme() {
 
     console.log("Loaded theme from localStorage:", savedTheme);
     
-    if (savedTheme === "dark") {
+    if (savedTheme === "dark" || !savedTheme) {
         stylesheet.setAttribute("href","./css/dark.css");
         themeIcon.setAttribute("src","./img/sol.png");
         logo.setAttribute("src","./img/logob.png");
