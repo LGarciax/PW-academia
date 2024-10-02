@@ -120,36 +120,41 @@
         <div class="popup">
             <a class="close" href="#popupclose">&times;</a>
             <div class="content">
+                
+                <div class="container-form">
                 <form id="Contato" action="/submit" method="post">
                     <label for="name">Nome:</label><br>
                     <input type="text" id="nome" name="name" placeholder="Nome" required><br><br>
-                    
+                                        
                     <label for="email">Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="email@email.com"  required><br><br>
-                    
+                                        
                     <label for="tel">Telefone:</label><br>
                     <input type="tel" id="tel" name="tel" placeholder="(11) XXXXX-XXXX"  required><br><br>
-                    
+                                        
                     <label for="motive">Razão de contato:</label><br>
                     <textarea id="motive" name="motive" rows="4" cols="50" placeholder="Deixe o motivo do contato para que possamos retornar o mais rapido possive."  required></textarea><br><br>
                     
-                    <div class="enviar">
-                        <a href="#">Enviar</a>
-                    </div>
+                    
+                        
+                   
                   </form>
+                  <a href="#" class="enviar">Enviar</a>
+                </div>
             </div>
             <div class="content2">
                 <div class="contato">
                 
-                <ul>
-                    <h3>Contato</h3>
-                    <li><img src="./img/casa.png" alt="">Rua Muay Thai, XX, São Paulo</li>
-                    <li><img src="./img/enviar.png" alt="">info@ascensaodotigre.com</li>
-                    <li><img src="./img/telefone.png" alt="">+55 11 5555-5555</li>
+                    <ul>
+                        <h3>Contato</h3>
+                        <li><img src="./img/casa.png" alt="">Rua Muay Thai, XX, São Paulo</li>
+                        <li><img src="./img/enviar.png" alt="">info@ascensaodotigre.com</li>
+                        <li><img src="./img/telefone.png" alt="">+55 11 5555-5555</li>
               
                     
                     
-                </ul>
+                    </ul>
+                
                 </div>
                 
             </div>
@@ -179,7 +184,8 @@
         <h3>Sobre a Ascensão do Tigre</h3>
         <p>Na Ascensão do Tigre, acreditamos que o Muay Thai é mais do que uma arte marcial — é um caminho para o crescimento pessoal, disciplina e bem-estar. Nosso objetivo é criar um espaço onde alunos de todas as idades e níveis possam se desafiar, superar limites e descobrir o seu verdadeiro potencial.</p>
     </div>
-    <div class="footer-links">
+    <div class="container-links">
+        <div class="footer-links">
         <div class="tablet" style="flex-direction: column; height: 100%;">
             <h3>Contato</h3>
             <ul>
@@ -188,10 +194,10 @@
                 <li>+55 11 5555-5555</li>
                 
             </ul>
-            
         </div>    
-    </div>
-    <div class="footer-links">
+        </div>
+    
+        <div class="footer-links">
         <div class="tablet">
             <h3>Horário</h3>
             
@@ -212,6 +218,7 @@
                 </tbody>
             </table>
         </div>    
+        </div>
     </div>
 </footer>
 </main>
