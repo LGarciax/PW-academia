@@ -125,7 +125,6 @@ filter: brightness(80%);
 color: var(--text-button);
 }
 .banner {
-
 background-position: center;
 background-size: cover;
 height: 60%;   
@@ -146,27 +145,40 @@ font-size: 2.5vw;
 color: white;
 padding: 5px;
 border-radius: 5px;
-font-family: 'Showdex', sans-serif;
 }
-
+.price h3 {
+    font-family: 'Showdex', sans-serif;
+    color: var(--card-text);
+}
 .price p {
     font-family: 'Showdex', sans-serif;
+    color: var(--card-text);
 }
 
 #infantil{
-font-family: 'Showdex', sans-serif;
-color: var(--card-text);
-top: 32vw;
+top: 30vw;
+left: 2.5vw;
+}
+#pInfantil{
+top: 34vw;
 left: 4.5vw;
 }
 
 #adulto{
-top: 32vw;
-left: 26.5vw;
+top: 30vw;
+left: 25.5vw;
+}
+#pAdulto{
+top: 34vw;
+left: 27.5vw;
 }
 
 #idoso{
-top: 32vw;
+top: 30vw;
+left: 47.5vw;
+}
+#pIdoso{
+top: 34vw;
 left: 48vw;
 }
 
