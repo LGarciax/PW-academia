@@ -347,6 +347,7 @@ input[type=tel] {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-size: 1vw;
 }
 
 label{
