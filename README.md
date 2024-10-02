@@ -22,7 +22,7 @@ Este projeto visa demonstrar habilidades de desenvolvimento front-end adquiridas
 
 ## Autores
 
-- Luan Garcia
+- Luan Garcia - https://github.com/LGarciax
 - Pedro Pires
 - Raul Santos - https://github.com/LudowBR
 - Ricardo Gasperini
