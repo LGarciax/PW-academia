@@ -24,8 +24,9 @@ Este projeto visa demonstrar habilidades de desenvolvimento front-end adquiridas
 
 - Luan Garcia
 - Pedro Pires
-- Raul Santos
+- Raul Santos - https://github.com/LudowBR
 - Ricardo Gasperini
-- Thiago Moura
-- Estudante de Design de Sistema na ETEC Itaquera
+- Thiago Moura - https://github.com/ThiagoFNM
+
+### Estudantes de Design de Sistemas na ETEC Itaquera
 
